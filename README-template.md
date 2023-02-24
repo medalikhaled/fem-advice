@@ -119,9 +119,9 @@ This is where you can give a hat tip to anyone who helped you out on this projec
 ## Additions
 
 - fix the responsive svg
-- optimize fetching using react query
+- optimize fetching using react query / caching
 - image optimization & lazy loading with picture tag
 - add dark mode
-- add svg animation **loader
+- add svg animation **loader -> lottie
 - add css apostrophes ->affter** content
 - a11y to make the div clickable

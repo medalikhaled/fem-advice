@@ -8,13 +8,17 @@ function Icon() {
     function handleResize() {
       console.log("resized to: ", window.innerWidth, "x", window.innerHeight);
       if (window.innerWidth < 768) {
-        setIsMobile(true);
+        setIsMobile((prev) => !prev);
       }
     }
     window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, [isMobile]);
 
-  // ! There is some problem with responsive
+  // ! There is some problem with responsive, dunno why it does not re-render on resize
 
   return (
     <svg
