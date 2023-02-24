@@ -19,6 +19,9 @@ module.exports = {
       fontFamily: {
         primary: ["Manrope", "sans-serif"],
       },
+      boxShadow: {
+        outer: "0px 7px 29px 0px hsl(150, 100%, 66%, 02)",
+      },
     },
   },
   plugins: [],
